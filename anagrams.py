@@ -1,5 +1,7 @@
 class Solution: # Using list functions
     def isAnagram(self, s: str, t: str) -> bool:
+        if len(s) != len(t):
+            return False
         arr1 = list(s) #racecar
         arr2 = list(t) #carrace
         for i in arr1:
@@ -11,13 +13,15 @@ class Solution: # Using list functions
 
 
 sol = Solution()
-print(sol.isAnagram("racecar", "carrace"))
+print(sol.isAnagram("xx", "x"))
 
 
 """
-Using list functions and without affecting the original string lists
+without affecting the original strings
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
+        if len(s) != len(t):
+            return False
         arr1 = list(s) #racecar
         arr2 = list(t) #carrace
         result = arr1.copy()
