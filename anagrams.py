@@ -15,7 +15,7 @@ print(sol.isAnagram("racecar", "carrace"))
 
 
 """
-without affecting the original strings
+Using list functions and without affecting the original string lists
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         arr1 = list(s) #racecar
