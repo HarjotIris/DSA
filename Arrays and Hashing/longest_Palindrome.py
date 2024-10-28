@@ -2,6 +2,7 @@ class Solution:
     def longestPalindrome(self, s: str) -> str:
         temp = ""
         res = ""
+        # idea is that we expand outwards from i, with i at it's center
         for i in range(len(s)):
             # checking for odd length palindromes
             l = i
