@@ -7,7 +7,7 @@ class Solution:
         for i in range(len(nums)):
             diff = target - nums[i]
             if diff in HashMap and HashMap[diff] != i:
-                return (i, HashMap[diff])
+                return ([i, HashMap[diff]])
             
 sol = Solution()
 print(sol.twoSum([3,4,5,6], 7))
